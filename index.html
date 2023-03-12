@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="app.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row justify-content-center mt-4">
+            <div class="col-6">
+                <div class="container bg-light">
+                    <div class="row shadow">
+                        <a href="https://www.vecteezy.com/free-vector/human">
+                            <img src="imgs/banner.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="row justify-content-center shadow-sm">
+                        <p id="scoreCard" class="score text-dark">
+                            <span id="playerScore">0</span> to <span id="computerScore">0</span>
+                        </p>
+                    </div>
+                    <div class="row py-2 justify-content-center shadow-sm">
+                        <div class="col-10">
+                            <P id="gameStatus" class="text-dark text-center lead">Start the Game</P>
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div
+                            class=" usericon col-6 py-4 d-flex justify-content-center px-3 border-right shadow-sm border-secondary">
+                            <i class="fa-solid fa-user" title="You"></i>
+                            <img src="imgs/1.png" alt="" class="img-fluid d-block" id="playerImage">
+                        </div>
+                        <div
+                            class="usericon col-6 py-4 d-flex justify-content-center border-left shadow-sm border-secondary">
+                            <i class="fa-solid fa-computer" title="Computer"></i>
+                            <img src="imgs/1.png" alt="" class="img-fluid d-block" id="computerImage">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pb-4 shadow-sm">
+                        <div class="col-10 d-flex justify-content-center">
+                            <div class="d-block">
+                                <button title="rock" id="rockBtn" class="btn btn-primary buttonIcon mx-3" value="rock"><i
+                                        class="fa-solid fa-hand-back-fist"></i></button>
+                            </div>
+                            <div class="d-block">
+                                <button title="paper" id="paperBtn" class="btn btn-primary buttonIcon mx-3" value="paper"><i
+                                        class="fa-solid fa-hand"></i></button></div>
+                            <div class="d-block">
+                                <button title="scissor" id="scissorBtn" class="btn btn-primary buttonIcon mx-3" value="scissor"><i
+                                        class="fa-solid fa-hand-scissors"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="p-0 col-6">
+                            <button class="btn btn-warning reset" id="resetBtn" value="reset">Reset</button>
+                        </div>
+                        <div class="col-6 padd">
+                            <label for="select" class="select">Play upto</label>
+                            <select class="form-select form-select-sm" id="selectInput"
+                                aria-label=".form-select-sm example">
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5" selected>Five</option>
+                                <option value="6">Six</option>
+                                <option value="7">Seven</option>
+                                <option value="8">Eight</option>
+                                <option value="9">Nine</option>
+                                <option value="10">Ten</option>
+                            </select><span class="select"> rounds.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

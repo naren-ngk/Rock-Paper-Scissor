@@ -1,0 +1,72 @@
+body{
+    background: url('imgs/bg.jpg') center/cover no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+.score{
+    font-size: 3rem;
+}
+.score span{
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+.buttonIcon{
+    font-size: 4rem;
+    border-radius: 60%;
+}
+.lead{
+    font-size: 2rem;
+    font-weight: 400;
+}
+#playerImage{
+    transform: rotate(35deg);
+}
+#computerImage{
+    transform: rotate(-35deg);
+}
+button i{
+    transform: rotate(35deg);
+}
+button i:nth-child(2){
+    transform: rotate(-35deg);
+}
+.usericon{
+    position: relative;
+}
+.usericon i{
+    display: inline-block;
+    position: absolute;
+    right: 85%;
+    font-size: 1.5rem;
+}
+.usericon i:hover{
+    cursor: pointer;
+    color: steelblue;
+}
+.end{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.reset{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+.select{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-indent: 5px;
+}
+.select:active{
+    outline: none !important;
+}
+.padd{
+    padding: .35rem 3rem;
+}
+#selectInput{
+    width: 65px;
+    border-radius: 25px;
+    height: 35px;
+}
